@@ -1,0 +1,42 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+ <header>
+    <div class="wrapper clearfix">
+        <ul class="info">
+            <li><h2>email us at {{ profile.email }}</h2></li>
+            <li><span>|</span></li>
+            <li>{{widget('clicktocall', 'clicktocall', {phone: 'profile'})|raw}}</li>
+        </ul>
+    </div>
+</header>
+
+<div class="logo-section wrapper">
+    {% if profile.logo|length > 0 %}
+       <img src="{{ profile.logo }}"></img>
+    {% else %}
+       <h1>{{ profile.business }}</h1>
+    {% endif %}
+</div>
+
+<section>
+    {{widget('feature', 'featurehome', {"header": "Small enough to care, big enough to cope.", "strapline":"Our mission is to provide the finest automotive service by uniting the best technology, talent and leadership to create a relationship of trust that benefits our clients, team members and our community.", "buttonText":"", "defaultBgImg": asset('images/code-bg.jpg'), 'originalOffsetCenter': '-353','showBtn': false})|raw}}
+</section>
+
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div>  
+
+<footer>
+    <div class="wrapper">
+        {{widget('socialicons', 'socialicons', {'twitter': 'profile', 'facebook': 'profile', 'linkedin':'profile'})|raw}}
+    </div>
+    <div class="footer2">
+        <div class="wrapper">
+            <p>{{ profile.address }}, {{ profile.address1 }}, {{ profile.address2 }}</p>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}

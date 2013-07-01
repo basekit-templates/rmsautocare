@@ -1,4 +1,6 @@
-rmsautocare
+rnsautocare
 ===========
 
-BaseKit's RMS Auto Care Template
+BaseKit's RMS Autocare Template
+
++ Initial commit - 26/06/13
