@@ -3,6 +3,8 @@
 	"thumbnail":"rmsautocare.png",
 	"screenshot":"rmsautocare.png",
 	"pageTypes":["home"],
+    "defaultColorSwatch":"Professional 10",
+    "defaultFontSwatch":"Helvetica",
 	"colorSwatches":
     {
         "Swatch 1": {
