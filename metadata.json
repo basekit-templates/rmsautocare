@@ -2,6 +2,7 @@
 	"name":"RMS Autocare",
 	"thumbnail":"rmsautocare.png",
 	"screenshot":"rmsautocare.png",
+	"templateType":"standard",
 	"pageTypes":["home"],
     "defaultColorSwatch":"Professional 10",
     "defaultFontSwatch":"Helvetica",
